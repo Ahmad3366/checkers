@@ -85,7 +85,7 @@ export async function game() {
 							sBoard.checker = null
 							p1Turn ? p2Checkers-- : p1Checkers--
 
-
+							play('capture')
 							curSelected.checker = null
 							board.checker = p1Turn ? 'p1' : 'p2'
 							curSelected = null
@@ -99,6 +99,7 @@ export async function game() {
 
 			}
 
+			play('move')
 			curSelected.checker = null
 			board.checker = p1Turn ? 'p1' : 'p2'
 			curSelected = null

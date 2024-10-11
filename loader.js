@@ -9,4 +9,8 @@ export default function loadAssets() {
 	})
 
 	loadFont('round', 'Round9x13.ttf', {outline: 6})
+
+	loadRoot('./sounds/')
+	loadSound('move', 'move-self.mp3')
+	loadSound('capture', 'capture.mp3')
 }
